@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "CDE2020";
+  src: url("../fonts/CDE2020-Regular.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CDE2020";
+  src: url("../fonts/CDE2020-Bold.woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CDE2020";
+  src: url("../fonts/CDE2020-Italic.woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+body {
+  font-family: CDE2020;
+}
+#main {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+#main .row > div button {
+  font-size: 3rem;
+}
+footer {
+  font-size: 0.75rem;
+}
+footer > div > * {
+  line-height: inherit;
+  font-size: 1.25rem;
+}
+.bg-dark > a {
+  color: yellow;
+}
+.char-cell .char-btn {
+  width: 65px;
+  height: 5.5rem;
+}
+.char-cell.col-xl-1 .char-btn {
+  width: 65px;
+}
+.char-cell.col-xl-2 .char-btn {
+  width: 155px;
+}
+.char-cell.col-xl-3 .char-btn {
+  width: 210px;
+}
+
+.pointable {
+  cursor: pointer !important;
+}
+
+/* Numpad */
+.numpad-button-graphic {
+  --base-height: 3rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  height: var(--base-height);
+  line-height: var(--base-height);
+  /* width: 60px; */
+  color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 0.35rem;
+  box-shadow: 0 0.3em 0.3rem rgba(0, 0, 0, 0.35);
+  font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.numpad-button-graphic.pointable:not(.disabled):hover {
+  background-color: rgba(211, 214, 28, 0.808);
+  color: rgba(0, 0, 0, 0.75);
+}
+.numpad-button-graphic.disabled {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.numpad-button-graphic.numpad-button-graphic-lg {
+  width: 120px;
+  padding-left: 0.5rem;
+}
+.numpad-button-graphic.numpad-button-graphic-tall {
+  --base-height: 6rem;
+}
+.numpad-button-graphic-verbose {
+  /* 2 lines of text */
+  padding-top: 0.2rem;
+  line-height: 1.2rem;
+}
+
+/* Drag and Drop */
+.drop-area {
+  z-index: -1;
+  height: 100%;
+  top: 0px;
+  width: 50%;
+  position: absolute;
+  border: 4px solid transparent;
+  --area-color: rgba(247, 209, 19, 0.4);
+}
+#raster.dragging .char-cell:not(.drag-target) .drop-area {
+  z-index: 1;
+  border-color: var(--area-color);
+}
+#raster.dragging .char-cell:not(.drag-target) .drop-area.drop-over {
+  background-color: var(--area-color);
+}
+.drop-pre {
+  left: 0px;
+}
+.drop-post {
+  left: 50%;
+}
+
+/* Loading */
+.spinner {
+  --animation-duration: 1500ms;
+}
+.spinner .spinner-item {
+  height: 3rem;
+  width: 3rem;
+  display: inline-block;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  animation: spin var(--animation-duration) ease-in-out infinite;
+}
+@keyframes spin {
+  0%,
+  100% {
+    transform: translateY(75%);
+  }
+  50% {
+    transform: translateY(-75%);
+  }
+}
+.spinner .spinner-item:nth-child(1) {
+  animation-delay: calc(var(--animation-duration) / 6 * -1);
+}
+.spinner .spinner-item:nth-child(2) {
+  animation-delay: calc(var(--animation-duration) / 6 * -2);
+}
+.spinner .spinner-item:nth-child(3) {
+  animation-delay: calc(var(--animation-duration) / 6 * -3);
+}
+
+/* Bootstrap breakpoints */
+@media (min-width: 576px) {
+  #main {
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
