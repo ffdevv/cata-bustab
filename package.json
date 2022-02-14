@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/ffdevv/cata-bustab/issues"
   },
-  "homepage": "https://github.com/ffdevv/cata-bustab#readme",
+  "homepage": "https://ffdevv.github.io/cata-bustab/",
   "devDependencies": {
     "serve": "^11.2.0"
   }
