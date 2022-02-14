@@ -32,7 +32,7 @@ export const CHAR_CELL_LINK_INFO_TITLE = "Cascia föra i diavoleríe";
 export const CHAR_CELL_LINK_FAVOURITE_TITLE = "Preferíd";
 export const CHAR_CELL_LINK_INFO_ICON_NAME = "info-circle";
 
-export const UCD_DATA_PATH = "/data/ucd-for-cde2020-glyphs.min.json";
+export const UCD_DATA_PATH = "/cata-bustab/data/ucd-for-cde2020-glyphs.min.json"; // "/data/ucd-for-cde2020-glyphs.min.json";
 export const DEFAULT_NUMPAD_LAYOUT = {
   diviso: 171, // «
   per: 187, // »
