@@ -3164,7 +3164,15 @@ export const listeners = {
     numpadLayout = consts.DEFAULT_NUMPAD_LAYOUT
   ) => {
     return $obj.on("keydown", function (event) {
-      if (event.originalEvent.ctrlKey) {
+      if (
+        event.originalEvent.ctrlKey && 
+        !(  // Do not trigger for these combos
+            event.originalEvent.keyCode === 67 || // CTRL+C
+            event.originalEvent.keyCode === 86 || // CTRL+V
+            event.originalEvent.keyCode === 88 || // CTRL+X
+            event.originalEvent.keyCode === 65    // CTRL+A
+         )
+      ) {
         event.preventDefault();
         let keyCode = event.originalEvent.keyCode;
         let keyCodeName = consts.NUMPAD_KEYCODES_NAMES[keyCode];
