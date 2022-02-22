@@ -2199,6 +2199,7 @@ export const props = {
         59707,
         59719,
         246,
+        59737,
         59739,
         59751,
         59743,
@@ -2206,6 +2207,7 @@ export const props = {
         250,
         59797,
         252,
+        472,
         59833,
         59823,
         59835,
@@ -2245,13 +2247,15 @@ export const props = {
         59707: "O APERTA TONICA",
         59719: "O APERTA TONICA LUNGA",
         246: "O TURBATA ATONA",
+        59737: "O TURBATA TONICA",
         59739: "O TURBATA CHIUSA TONICA",
         59751: "O TURBATA CHIUSA TONICA LUNGA",
         59743: "O TURBATA APERTA TONICA",
         59755: "O TURBATA APERTA TONICA LUNGA",
         250: "U TONICA",
         59797: "U TONICA LUNGA",
-        252: "U TURBATA",
+        252: "U TURBATA ATONA",
+        472: "U TURBATA TONICA",
         59833: "U TURBATA LUNGA",
         59823: "U TURBATA APERTA TONICA",
         59835: "U TURBATA APERTA TONICA LUNGA",
@@ -3165,13 +3169,16 @@ export const listeners = {
   ) => {
     return $obj.on("keydown", function (event) {
       if (
-        event.originalEvent.ctrlKey && 
-        !(  // Do not trigger for these combos
+        event.originalEvent.ctrlKey &&
+        !(
+          // Do not trigger for these combos
+          (
             event.originalEvent.keyCode === 67 || // CTRL+C
             event.originalEvent.keyCode === 86 || // CTRL+V
             event.originalEvent.keyCode === 88 || // CTRL+X
-            event.originalEvent.keyCode === 65    // CTRL+A
-         )
+            event.originalEvent.keyCode === 65
+          ) // CTRL+A
+        )
       ) {
         event.preventDefault();
         let keyCode = event.originalEvent.keyCode;
