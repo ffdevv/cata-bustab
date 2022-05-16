@@ -1590,6 +1590,8 @@ export const props = {
       ],
       multicol: { 59937: 2, 59936: 2, 59935: 2 },
       names: {
+        59928: "VIRGOLETTA TIPIZZAZIONE APRE",
+        59929: "VIRGOLETTA TIPIZZAZIONE CHIUDE",
         59904: "C MEDIOPALATALE",
         59905: "C MAIUSCOLA MEDIOPALATALE",
         59906: "C MAIUSCOLETTO MEDIOPALATALE",
@@ -2121,7 +2123,9 @@ export const props = {
         8217,
         59932,
         8211,
-        59930
+        59930,
+        59928,
+        59929
       ],
       names: {
         193: "A MAIUSCOLA TONICA",
@@ -2161,7 +2165,9 @@ export const props = {
         7776: "S MAIUSCOLA SONORA",
         7777: "S MINUSCOLA SONORA",
         379: "Z MAIUSCOLA SONORA",
-        380: "Z MINUSCOLA SONORA"
+        380: "Z MINUSCOLA SONORA",
+        59928: "VIRGOLETTA TIPIZZAZIONE APRE",
+        59929: "VIRGOLETTA TIPIZZAZIONE CHIUDE",
       }
     },
     latino: {
