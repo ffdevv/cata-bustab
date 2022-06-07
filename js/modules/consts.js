@@ -36,7 +36,7 @@ export const UCD_DATA_PATH = "/cata-bustab/data/ucd-for-cde2020-glyphs.min.json"
 export const DEFAULT_NUMPAD_LAYOUT = {
   diviso: 171, // «
   per: 187, // »
-  meno: 8212, // trattino lungo medio
+  meno: 8211, // trattino lungo corto
   piu: 59932, // freccia destra rimando
   punto: 59904, // c mediopalatale
   "0": 472, // ǘ
