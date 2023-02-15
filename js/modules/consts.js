@@ -34,8 +34,8 @@ export const CHAR_CELL_LINK_INFO_ICON_NAME = "info-circle";
 
 export const UCD_DATA_PATH = "/cata-bustab/data/ucd-for-cde2020-glyphs.min.json"; // "/data/ucd-for-cde2020-glyphs.min.json";
 export const DEFAULT_NUMPAD_LAYOUT = {
-  diviso: 171, // «
-  per: 187, // »
+  diviso: 7777, // ṡ                 old // 171, // «
+  per: 380, // ż                     old // 187, // »
   meno: 8211, // trattino lungo corto
   piu: 59932, // freccia destra rimando
   punto: 59904, // c mediopalatale
@@ -43,12 +43,12 @@ export const DEFAULT_NUMPAD_LAYOUT = {
   "1": 59737, // o dieresi acuto
   "2": 59884, // o dieresi grave
   "3": 59908, // g mediopalatale
-  "4": 59703, // o chiusa acuto
-  "5": 59707, // o aperta acuto
-  "6": 380, // ż
-  "7": 59595, // e chiusa acuto
-  "8": 59599, // e aperta acuto
-  "9": 7777 // ṡ
+  "4": 171, // «                     old // 59703, // o chiusa acuto
+  "5": 187, // »                     old // 59707, // o aperta acuto
+  "6": 59905, // C mediopalatale     old // 380, // ż
+  "7": 8216, // ‘                    old // 59595, // e chiusa acuto
+  "8": 8217, // ’                    old // 59599, // e aperta acuto
+  "9": 59909, // G mediopalatale     old // 7777 // ṡ
 };
 export const NUMPAD_REAL_LAYOUT = {
   diviso: 47,
